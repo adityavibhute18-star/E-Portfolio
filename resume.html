@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Vibhute - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            background-color: #2b2b2b;
+            /* Dark background to contrast the paper */
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .container {
+            display: flex;
+            max-width: 850px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            min-height: 1100px;
+        }
+
+        /* LEFT SIDE */
+        .sidebar {
+            width: 34%;
+            background: #1f3b57;
+            color: white;
+            padding: 50px 30px;
+        }
+
+        .sidebar h2 {
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            border-bottom: 1.5px solid rgba(255, 255, 255, 0.6);
+            padding-bottom: 5px;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            width: 100%;
+        }
+
+        .sidebar h2:first-child {
+            margin-top: 0;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 11px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .contact-info div {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .contact-info i {
+            font-size: 13px;
+            width: 16px;
+            text-align: center;
+        }
+
+        .education-block {
+            margin-bottom: 18px;
+            font-size: 10px;
+            line-height: 1.5;
+        }
+
+        .education-block .date {
+            font-weight: 800;
+            margin-bottom: 5px;
+            font-size: 11px;
+        }
+
+        .education-block .inst-title {
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-bottom: 2px;
+        }
+
+        .education-block .degree {
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .sidebar ul {
+            padding-left: 18px;
+            margin: 0;
+            font-size: 11px;
+            line-height: 2.2;
+            list-style-type: circle;
+        }
+
+        .sidebar li {
+            font-weight: 700;
+        }
+
+        /* RIGHT SIDE */
+        .content {
+            width: 66%;
+            padding: 60px 45px;
+            background: #ffffff;
+            color: #1e293b;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 42px;
+            font-weight: 800;
+            color: #1f3b57;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .name span {
+            font-weight: 300;
+            color: #1f3b57;
+        }
+
+        .title {
+            color: #1f3b57;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #1f3b57;
+            display: inline-block;
+            padding-bottom: 5px;
+            padding-right: 20px;
+        }
+
+        .section-title {
+            color: #1f3b57;
+            font-size: 16px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #1f3b57;
+            padding-bottom: 5px;
+        }
+
+        .profile-text {
+            font-size: 11px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 30px;
+            font-weight: 500;
+            color: #334155;
+        }
+
+        .experience-container {
+            border-left: 1px solid #94a3b8;
+            padding-left: 20px;
+            margin-left: 8px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .job-header::before {
+            content: '';
+            position: absolute;
+            left: -24.5px;
+            top: 4px;
+            width: 8px;
+            height: 8px;
+            background-color: #1f3b57;
+            transform: rotate(45deg);
+            /* Diamond shape */
+        }
+
+        .job-company {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1f3b57;
+        }
+
+        .job-date {
+            font-size: 10px;
+            font-weight: 800;
+            color: #1f3b57;
+            text-transform: uppercase;
+        }
+
+        .experience-item ul {
+            padding-left: 15px;
+            margin: 0;
+            font-size: 11px;
+            line-height: 1.6;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .experience-item li {
+            margin-bottom: 4px;
+        }
+
+        .bottom-sections {
+            display: flex;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .bottom-col {
+            flex: 1;
+        }
+
+        .bottom-sections ul {
+            padding-left: 15px;
+            margin: 0;
+            font-size: 10.5px;
+            line-height: 1.6;
+            color: #334155;
+            font-weight: 500;
+        }
+
+        .bottom-sections li {
+            margin-bottom: 6px;
+        }
+
+        .project-details li {
+            margin-bottom: 4px;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar,
+            .content {
+                width: 100%;
+            }
+
+            .bottom-sections {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- LEFT SIDE -->
+        <div class="sidebar">
+
+            <h2>CONTACT</h2>
+            <div class="contact-info">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>8808555584</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>adityavibhute18@gmail.com</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Dadar, Mumbai</span>
+                </div>
+            </div>
+
+            <h2>EDUCATION</h2>
+
+            <div class="education-block">
+                <div class="date">2025-2028</div>
+                <div class="inst-title">VIDYALANKAR INSTITUTE OF TECHNOLOGY</div>
+                <div class="degree">BACHELOR OF TECHNOLOGY - COMPUTER ENGINEERING</div>
+            </div>
+
+            <div class="education-block">
+                <div class="date">2022 - 2025</div>
+                <div class="inst-title">VIDYALANKAR POLYTECHNIC</div>
+                <div class="degree">DIPLOMA IN COMPUTER ENGINEERING</div>
+            </div>
+
+            <h2>SKILLS</h2>
+            <ul>
+                <li>Programming Languages</li>
+                <li>Database Management</li>
+                <li>AI</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+            </ul>
+
+            <h2>LANGUAGES</h2>
+            <ul>
+                <li>English</li>
+                <li>Marathi</li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="content">
+
+            <div class="header">
+                <div class="name">ADITYA <span>VIBHUTE</span></div>
+                <div class="title">STUDENT</div>
+            </div>
+
+            <div class="section-title">PROFILE</div>
+            <div class="profile-text">
+                Motivated Computer Engineering student with strong programming and web development skills. Experienced
+                in system design and hands-on projects involving real-time data handling. Eager to apply knowledge in a
+                professional environment and contribute to innovative solutions.
+            </div>
+
+            <div class="section-title">WORK EXPERIENCE</div>
+
+            <div class="experience-container">
+                <div class="experience-item">
+                    <div class="job-header">
+                        <span class="job-company">Secure Cyber Future</span>
+                        <span class="job-date">JUNE 2024 - JULY 2024</span>
+                    </div>
+                    <ul>
+                        <li>Assisted in vulnerability assessments and penetration testing on web applications</li>
+                        <li>Worked with tools such as Burp Suite and SQLmap</li>
+                        <li>Gained practical experience in cybersecurity practices</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <span class="job-company">Web Development Intern</span>
+                        <span class="job-date">Jan 2024 - Mar 2024</span>
+                    </div>
+                    <ul>
+                        <li>Developed responsive web applications using Python, HTML, CSS, and JavaScript</li>
+                        <li>Worked on backend development and database integration with MySQL</li>
+                        <li>Collaborated with team members to debug and optimize application performance</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="job-header">
+                        <span class="job-company">Python Programming Intern</span>
+                        <span class="job-date">May 2023 - Jun 2023</span>
+                    </div>
+                    <ul>
+                        <li>Created automation scripts and small projects using Python</li>
+                        <li>Applied libraries like Pandas and NumPy for data processing tasks</li>
+                        <li>Improved coding efficiency and problem-solving skills through real-world tasks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom-sections">
+                <div class="bottom-col">
+                    <div class="section-title" style="margin-top: 0;">CERTIFICATE</div>
+                    <ul>
+                        <li>Internship Certificate</li>
+                        <li>Introduction to Javascript</li>
+                        <li>Python Certificate</li>
+                        <li>Executive Diploma in Operations Management</li>
+                    </ul>
+                </div>
+
+                <div class="bottom-col">
+                    <div class="section-title" style="margin-top: 0;">PROJECT</div>
+                    <ul class="project-details">
+                        <li>GovGuide</li>
+                        <li>Role:- Team Lead and Developer</li>
+                        <li>Skills:- Java, Xml, Android Studio, UI UX design</li>
+                        <li>Result:- Improved accessibility of government resources by creating a user-friendly
+                            interface with secure login, real-time updates, and multilingual support</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">AV <span>E-Portfolio</span></a>
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li class="close-menu">
+                    <i class="fa-solid fa-xmark" id="close-menu-btn"></i>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="hero-content">
+            <p class="greeting">Hello, I'm</p>
+            <h1 class="name">Aditya Vibhute</h1>
+            <h2 class="title">A <span class="typing"></span></h2>
+            <p class="description" style="margin-bottom: 0.2rem;">Computer Engineering</p>
+            <p class="description">Student</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn primary">View Work <i class="fa-solid fa-arrow-right"
+                        style="margin-left: 8px;"></i></a>
+                <a href="#contact" class="btn secondary">Contact Me</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator fade-in">
+            <i class="fa-solid fa-angles-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-grid fade-in">
+            <div class="about-text">
+                <p>Hello! I'm a passionate developer who enjoys building modern and responsive websites using HTML and
+                    CSS, along with exploring intelligent solutions through Machine Learning.</p>
+
+                <p>My journey began with learning the basics of web design, and over time I have developed projects that
+                    combine front-end development with smart, data-driven applications. My current focus is on creating
+                    user-friendly, efficient, and innovative digital solutions.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-box">
+                    <h3>5+</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <h3>10+</h3>
+                    <p>Years Coding</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <h2 class="section-title fade-in">My Skills</h2>
+        <div class="skills-container fade-in">
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-html5"></i> HTML5 & CSS</h4>
+                        <p>Structuring accessible content and styling responsive web interfaces.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-js"></i> JavaScript</h4>
+                        <p>Adding interactive logic and dynamic features to web applications.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-php"></i> PHP</h4>
+                        <p>Developing robust server-side logic and database interactions.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-solid fa-database"></i> SQL</h4>
+                        <p>Designing schemas, writing complex queries, and managing relational databases.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Data</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-python"></i> Python</h4>
+                        <p>Writing scripts, automating tasks, and building backend services.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-git-alt"></i> Git & GitHub</h4>
+                        <p>Managing versions and collaborating securely on codebases.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-solid fa-brain"></i> Machine Learning</h4>
+                        <p>Training models and predicting outcomes using structured datasets.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-solid fa-chart-line"></i> Statistical Analysis & Modeling</h4>
+                        <p>Applying statistical methods to uncover insights and build predictive models.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Development Tools</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-google"></i> Google</h4>
+                        <p>Utilizing search, cloud workspaces, and developer tools.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-solid fa-book-open"></i> Jupyter Notebook</h4>
+                        <p>Interactive computing environment for data analysis and ML.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-solid fa-code"></i> Visual Studio Code</h4>
+                        <p>Extensible code editor with debugging and version control.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-brands fa-android"></i> Android Studio</h4>
+                        <p>Integrated development environment for Android applications.</p>
+                    </div>
+                    <div class="skill-item">
+                        <h4><i class="fa-solid fa-terminal"></i> Turbo C++</h4>
+                        <p>Compiler and IDE used for legacy C and C++ programming.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category ai-category">
+                <h3><i class="fa-solid fa-robot" style="color: var(--accent-color); margin-right: 8px;"></i>AI Tools</h3>
+                <div class="ai-tools-grid">
+
+                    <!-- DeepSeek -->
+                    <div class="ai-tool-card">
+                        <div class="ai-card-glow" style="background: radial-gradient(circle at top left, rgba(0,194,255,0.18), transparent 70%);"></div>
+                        <div class="ai-card-top">
+                            <div class="ai-logo-circle" style="background: linear-gradient(135deg, #001f3f, #0077b6); box-shadow: 0 0 18px rgba(0,194,255,0.4);">
+                                <span style="color:#00c2ff; font-size:1.1rem; font-weight:800;">D</span>
+                            </div>
+                            <div class="ai-badge" style="background: rgba(0,194,255,0.12); color:#00c2ff; border-color: rgba(0,194,255,0.3);">Reasoning</div>
+                        </div>
+                        <h4 class="ai-name">DeepSeek</h4>
+                        <p class="ai-desc">Advanced reasoning & code generation AI for complex problem solving.</p>
+                        <div class="ai-bar"><div class="ai-bar-fill" style="width:85%; background: linear-gradient(90deg,#00c2ff,#0077b6);"></div></div>
+                    </div>
+
+                    <!-- ChatGPT -->
+                    <div class="ai-tool-card">
+                        <div class="ai-card-glow" style="background: radial-gradient(circle at top left, rgba(16,163,127,0.18), transparent 70%);"></div>
+                        <div class="ai-card-top">
+                            <div class="ai-logo-circle" style="background: linear-gradient(135deg, #0a2e27, #10a37f); box-shadow: 0 0 18px rgba(16,163,127,0.4);">
+                                <i class="fa-solid fa-comment-dots" style="color:#fff; font-size:1rem;"></i>
+                            </div>
+                            <div class="ai-badge" style="background: rgba(16,163,127,0.12); color:#10a37f; border-color: rgba(16,163,127,0.3);">Chat & Code</div>
+                        </div>
+                        <h4 class="ai-name">ChatGPT</h4>
+                        <p class="ai-desc">Conversational AI for writing, coding & problem solving tasks.</p>
+                        <div class="ai-bar"><div class="ai-bar-fill" style="width:92%; background: linear-gradient(90deg,#10a37f,#0d7a60);"></div></div>
+                    </div>
+
+                    <!-- Blackbox AI -->
+                    <div class="ai-tool-card">
+                        <div class="ai-card-glow" style="background: radial-gradient(circle at top left, rgba(245,166,35,0.18), transparent 70%);"></div>
+                        <div class="ai-card-top">
+                            <div class="ai-logo-circle" style="background: linear-gradient(135deg, #2a1a00, #f5a623); box-shadow: 0 0 18px rgba(245,166,35,0.4);">
+                                <i class="fa-solid fa-cube" style="color:#fff; font-size:1rem;"></i>
+                            </div>
+                            <div class="ai-badge" style="background: rgba(245,166,35,0.12); color:#f5a623; border-color: rgba(245,166,35,0.3);">Dev AI</div>
+                        </div>
+                        <h4 class="ai-name">Blackbox AI</h4>
+                        <p class="ai-desc">AI-powered code search, completion & real-time debugging assistant.</p>
+                        <div class="ai-bar"><div class="ai-bar-fill" style="width:80%; background: linear-gradient(90deg,#f5a623,#c47d0a);"></div></div>
+                    </div>
+
+                    <!-- Claude -->
+                    <div class="ai-tool-card">
+                        <div class="ai-card-glow" style="background: radial-gradient(circle at top left, rgba(204,120,92,0.18), transparent 70%);"></div>
+                        <div class="ai-card-top">
+                            <div class="ai-logo-circle" style="background: linear-gradient(135deg, #2e1508, #cc785c); box-shadow: 0 0 18px rgba(204,120,92,0.4);">
+                                <i class="fa-solid fa-feather" style="color:#fff; font-size:1rem;"></i>
+                            </div>
+                            <div class="ai-badge" style="background: rgba(204,120,92,0.12); color:#cc785c; border-color: rgba(204,120,92,0.3);">Analysis</div>
+                        </div>
+                        <h4 class="ai-name">Claude</h4>
+                        <p class="ai-desc">Anthropic's AI assistant for analysis, writing & development tasks.</p>
+                        <div class="ai-bar"><div class="ai-bar-fill" style="width:88%; background: linear-gradient(90deg,#cc785c,#a0522d);"></div></div>
+                    </div>
+
+                    <!-- Google Gemini -->
+                    <div class="ai-tool-card">
+                        <div class="ai-card-glow" style="background: radial-gradient(circle at top left, rgba(66,133,244,0.18), transparent 70%);"></div>
+                        <div class="ai-card-top">
+                            <div class="ai-logo-circle" style="background: linear-gradient(135deg, #0a1a3e, #4285f4); box-shadow: 0 0 18px rgba(66,133,244,0.4);">
+                                <i class="fa-brands fa-google" style="color:#fff; font-size:1rem;"></i>
+                            </div>
+                            <div class="ai-badge" style="background: rgba(66,133,244,0.12); color:#4285f4; border-color: rgba(66,133,244,0.3);">Multimodal</div>
+                        </div>
+                        <h4 class="ai-name">Google Gemini</h4>
+                        <p class="ai-desc">Google's multimodal AI for text, code, images & real-time search.</p>
+                        <div class="ai-bar"><div class="ai-bar-fill" style="width:90%; background: linear-gradient(90deg,#4285f4,#1a56c4);"></div></div>
+                    </div>
+
+                    <!-- Perplexity -->
+                    <div class="ai-tool-card">
+                        <div class="ai-card-glow" style="background: radial-gradient(circle at top left, rgba(32,178,170,0.18), transparent 70%);"></div>
+                        <div class="ai-card-top">
+                            <div class="ai-logo-circle" style="background: linear-gradient(135deg, #021a1a, #20b2aa); box-shadow: 0 0 18px rgba(32,178,170,0.4);">
+                                <i class="fa-solid fa-magnifying-glass-plus" style="color:#fff; font-size:1rem;"></i>
+                            </div>
+                            <div class="ai-badge" style="background: rgba(32,178,170,0.12); color:#20b2aa; border-color: rgba(32,178,170,0.3);">Search AI</div>
+                        </div>
+                        <h4 class="ai-name">Perplexity</h4>
+                        <p class="ai-desc">AI-powered search engine for real-time, cited & accurate answers.</p>
+                        <div class="ai-bar"><div class="ai-bar-fill" style="width:83%; background: linear-gradient(90deg,#20b2aa,#0e7a75);"></div></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education and Experience Section -->
+    <section id="education" class="resume section">
+        <h2 class="section-title fade-in">Education & Experience</h2>
+        <div class="resume-container fade-in">
+            <div class="resume-column">
+                <h3 class="resume-heading"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+                <div class="timeline-box">
+                    <div class="timeline-item">
+                        <div class="time-dot"></div>
+                        <h4>BTech Computer Engineering</h4>
+                        <h5>Vidyalankar Institute of Technology</h5>
+                        <span class="date">2025 - 2028</span>
+                        <p>Relevant coursework includes Data Structures, Algorithms, Computer Graphics, and Web
+                            Development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="resume-column">
+                <h3 class="resume-heading"><i class="fa-solid fa-briefcase"></i> Experience</h3>
+                <div class="timeline-box">
+                    <div class="timeline-item">
+                        <div class="time-dot"></div>
+                        <h4>Computer Engineering With Diploma</h4>
+                        <h5>Vidyalankar Polytechnic</h5>
+                        <span class="date">2022- 2025</span>
+                        <p>Developed dynamic web interfaces, collaborated with backend teams, and improved site
+                            performance.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time-dot"></div>
+                        <h4>Python Programmer</h4>
+                        <h5>Self-Employed</h5>
+                        <span class="date">2025 - Present</span>
+                        <p>
+                            Created automation scripts and small projects using core programming concepts.
+                            Applied data processing techniques for handling and analyzing structured datasets.
+                            Improved coding efficiency and problem-solving skills through real-world development tasks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume-download fade-in" style="text-align: center; margin-top: 3rem;">
+            <a href="resume.html" target="_blank" class="btn primary"><i
+                    class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Resume</a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid fade-in">
+
+            <!-- Project 1: Color Picker -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-placeholder mock-1">
+                        <div class="mock-visual mock-colorpicker">
+                            <div class="cp-wheel"></div>
+                            <div class="cp-swatches">
+                                <span style="background:#ff6b6b"></span>
+                                <span style="background:#ffd93d"></span>
+                                <span style="background:#6bcb77"></span>
+                                <span style="background:#4d96ff"></span>
+                                <span style="background:#c77dff"></span>
+                                <span style="background:#ff9f1c"></span>
+                            </div>
+                            <div class="cp-bar"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>A Color Picker With Images</h3>
+                    <p>A Python-based application that uses image processing techniques to implement a color picker,
+                        allowing users to select and extract colors directly from images in an interactive way.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Car Game -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-placeholder mock-2">
+                        <div class="mock-visual mock-cargame">
+                            <div class="road">
+                                <div class="lane-line"></div>
+                                <div class="lane-line"></div>
+                            </div>
+                            <div class="car player-car">&#x1F697;</div>
+                            <div class="car obstacle-car" style="top:30px; left:60px;">&#x1F699;</div>
+                            <div class="car obstacle-car" style="top:60px; left:140px;">&#x1F695;</div>
+                            <div class="score-badge">SCORE: 480</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Car Game (Computer Graphics)</h3>
+                    <p>A car game developed using Turbo C++ and computer graphics (graphics.h), where vehicles, roads,
+                        and obstacles are displayed in a simple 2D interface with basic animation and user interaction.</p>
+                    <div class="project-tech">
+                        <span>C++</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: GovGuide -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-placeholder mock-3">
+                        <div class="mock-visual mock-govguide">
+                            <div class="phone-frame">
+                                <div class="phone-header">GovGuide</div>
+                                <div class="phone-item">&#x1F4CB; Schemes</div>
+                                <div class="phone-item">&#x1F3DB;&#xFE0F; Services</div>
+                                <div class="phone-item">&#x1F4F0; Updates</div>
+                                <div class="phone-btn">Explore &#x2192;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>GovGuide</h3>
+                    <p>Developed an Android application using Java and XML, focusing on user-friendly UI design and
+                        efficient functionality with multilingual support.</p>
+                    <div class="project-tech">
+                        <span>UI Design</span><span>Java</span><span>Android(XML)</span><span>Flutter UI</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Snack Hub Website -->
+            <div class="project-card">
+                <div class="project-img-container">
+                    <div class="project-placeholder mock-4">
+                        <div class="mock-visual mock-snackhub">
+                            <div class="snack-header">&#x1F354; Snack Hub</div>
+                            <div class="snack-grid">
+                                <div class="snack-item">&#x1F355;<span>Pizza</span></div>
+                                <div class="snack-item">&#x1F32E;<span>Tacos</span></div>
+                                <div class="snack-item">&#x1F35F;<span>Fries</span></div>
+                                <div class="snack-item">&#x1F964;<span>Drinks</span></div>
+                            </div>
+                            <div class="snack-btn">Order Now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3>Snack Hub Website</h3>
+                    <p>A dynamic food ordering website built with PHP, featuring a full menu, cart system, and backend
+                        order management for a seamless snacking experience.</p>
+                    <div class="project-tech">
+                        <span>PHP</span><span>HTML</span><span>CSS</span><span>MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+           
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <h2 class="section-title fade-in">Let's Work Together</h2>
+        <div class="contact-new fade-in">
+
+            <!-- Top Row: Info Left + Map Right -->
+            <div class="contact-top">
+
+                <!-- Left: Info -->
+                <div class="contact-left">
+                    <p class="contact-text" style="text-align:left; margin-bottom: 2rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Feel free to reach out!</p>
+
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91 8808555584</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">adityavibhute18@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">Dadar, Mumbai, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://github.com/adityavibhute18-star" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aditya-vibhute-13b185315/" target="_blank" rel="noopener noreferrer" class="social-icon-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right: Map -->
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.861!2d72.8478119!3d19.0177989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce5cd20bd20b%3A0x428a5650397b5bd0!2sDadar%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                        width="100%" height="100%"
+                        style="border:0; display:block;"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Bottom: Send Message Button -->
+            <div class="contact-bottom">
+                <a href="mailto:adityavibhute18@gmail.com" class="btn-send-message">
+                    <i class="fa-solid fa-paper-plane"></i> Send Message
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/adityavibhute18-star" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-vibhute-13b185315/" target="_blank" rel="noopener noreferrer"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="/cdn-cgi/l/email-protection#97f6f3fee3eef6e1fef5ffe2e3f2a6afd7f0faf6fefbb9f4f8fa"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        <p>Built with <i class="fa-solid fa-heart"></i> by Aditya Vibhute</p>
+    </footer>
+
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html> 
